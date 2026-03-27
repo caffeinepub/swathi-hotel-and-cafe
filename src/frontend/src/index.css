@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* Swathi Hotel palette — OKLCH */
+    --background: 0.96 0.015 80; /* warm cream #F6F0E4 */
+    --foreground: 0.14 0.02 50; /* near-black #1B1B1B */
+    --card: 1 0 0;
+    --card-foreground: 0.14 0.02 50;
+    --popover: 1 0 0;
+    --popover-foreground: 0.14 0.02 50;
+    --primary: 0.68 0.15 55; /* saffron orange #F4A340 */
+    --primary-foreground: 1 0 0;
+    --secondary: 0.88 0.03 75;
+    --secondary-foreground: 0.14 0.02 50;
+    --muted: 0.93 0.02 75;
+    --muted-foreground: 0.47 0.02 60;
+    --accent: 0.6 0.14 52; /* deeper amber #D8892E */
+    --accent-foreground: 1 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.9 0.02 75; /* #E7E1D6 */
+    --input: 0.9 0.02 75;
+    --ring: 0.68 0.15 55;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.96 0.015 80;
+    --sidebar-foreground: 0.14 0.02 50;
+    --sidebar-primary: 0.68 0.15 55;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.88 0.03 75;
+    --sidebar-accent-foreground: 0.14 0.02 50;
+    --sidebar-border: 0.9 0.02 75;
+    --sidebar-ring: 0.68 0.15 55;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+.font-script {
+  font-family: "Dancing Script", cursive;
+}
